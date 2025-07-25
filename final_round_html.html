@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Access Panel</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .noise {
+            color: #007700;
+            font-size: 0.9em;
+        }
+        .box {
+            background-color: #002200;
+            padding: 15px;
+            border: 1px solid #004400;
+        }
+        a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+        input, button {
+            background-color: #003300;
+            color: #00ff00;
+            border: 1px solid #007700;
+            padding: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Node Terminal: Access Grid 7</h1>
+    <p class="noise">Executing protocol handshake...</p>
+
+    <div class="section box">
+        <h2>Authentication Matrix</h2>
+        <p class="noise">Session Validation... <span style="color:lime;">Success</span></p>
+        <pre>
+        # config
+        firewall_bypass = true
+        master_key = ********
+        port = 443
+        </pre>
+    </div>
+
+    <div class="section box">
+        <h2>System Logs</h2>
+        <p>[INFO] Connected: 192.168.1.3</p>
+        <p class="noise">[WARNING] SSL cert mismatch</p>
+        <p class="noise">[ERROR] Hostname unresolved</p>
+        <p class="noise">[INFO] Retrying connection...</p>
+    </div>
+
+    <div class="section box">
+        <h2>Firewall Logs</h2>
+        <p class="noise">Rule 34 triggered - VPN masked address</p>
+        <p class="noise">Temporary access granted to shell node</p>
+        <p>Logging activity to vault...</p>
+    </div>
+
+    <div class="section box">
+        <h2>Token Cache</h2>
+        <p>Attempting to restore auth_token...</p>
+        <pre>
+        token = temp_4389xxdks
+        expires_in = 00:02:30
+        source = legacy
+        </pre>
+    </div>
+
+    <div class="section box">
+        <h2>Execution Shell</h2>
+        <p>&gt; run ./decrypt_final_stage</p>
+        <p>--access denied--</p>
+        <p>--access denied--</p>
+        <p>--access denied--</p>
+    </div>
+
+    <div class="section box">
+        <h2>User Login</h2>
+        <form onsubmit="return false">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter ID">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Passkey">
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="section box">
+        <h2>External Links</h2>
+        <ul>
+            <li><a href="#">Visit Secure Panel Docs</a></li>
+            <li><a href="#">Learn About Token Permissions</a></li>
+            <li><a href="#">Contact DevOps</a></li>
+        </ul>
+    </div>
+
+<!--
+    ~~~ SYSTEM OVERRIDE LOG ~~~
+    UserPath: /var/log/cryptgate/session-final.log
+    TraceStatus: obfuscated
+    Bypass Attempt 1: Failed
+    Bypass Attempt 2: Timed out
+    Bypass Attempt 3: Successful
+    FINAL_PASSKEY: 
+    Well done. You saw what others didn't. This is how legends end.
+    -->
+
+    <!-- Decoys below -->
+    <!-- FINAL_PASSKEY: ERROR113 -->
+    <!-- passkey: not_here_404 -->
+    <!-- end-of-line -->
+
+</body>
+</html>
